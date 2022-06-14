@@ -1,15 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import InsertEmoticonIcon from "@mui/icons-material/InsertEmoticon";
 import AboutMe from "../AboutMe/AboutMe";
-import Typography from "@mui/material/Typography";
 
 function AppContent() {
   const [flag, setFlag] = useState("hello");
 
   const helloBtnClick = () => {
     setFlag("about me");
+  };
+
+  const setHelloFlag = () => {
+    setFlag("hello");
   };
 
   const Content = (props: any) => {
@@ -26,62 +29,7 @@ function AppContent() {
           </Button>
         );
       case "about me":
-        return (
-          <section
-            style={{
-              height: "75%",
-              width: "70%",
-              background: "rgba(0, 0, 0, 0.3)",
-              // display: "flex",
-              // flexDirection: "row",
-              // justifyContent: "centers",
-              padding: "20px 60px",
-              borderRadius: "7px",
-            }}
-          >
-            <Typography
-              variant="h6"
-              // noWrap
-              component="a"
-              href="/"
-              sx={{
-                mr: 2,
-                display: { xs: "none", md: "flex" },
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".2rem",
-                color: "white",
-                textDecoration: "none",
-              }}
-            >
-              About Me
-            </Typography>
-            <Typography
-              variant="h6"
-              // noWrap
-              component="a"
-              href="/"
-              sx={{
-                mt: 6,
-                mr: 2,
-                display: { xs: "none", md: "flex" },
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".1rem",
-                color: "white",
-                textDecoration: "none",
-              }}
-            >
-              I am Grady Liu, a Software Developer. I have 3 years of front-end
-              and 2 years of back-end development experience. I love to learn
-              some trendy technical stuff from Udemy or Youtube. I enjoy the
-              process while I struggle with the new challenge. One of my
-              favorite sayings is "What you learn easily, you forget easily
-              too.If you watch and struggle on your own you will master the
-              technique better."
-            </Typography>
-          </section>
-        );
+        return <AboutMe onClose={setHelloFlag} />;
       case "Blog":
         return <div>Blog</div>;
       default:

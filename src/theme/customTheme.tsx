@@ -1,4 +1,4 @@
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles";
 
 declare module "@mui/material/styles" {
   interface Palette {
@@ -8,6 +8,7 @@ declare module "@mui/material/styles" {
   // allow configuration using `createTheme`
   interface PaletteOptions {
     neutral?: PaletteOptions["primary"];
+    cswhite?: PaletteOptions["primary"];
   }
 }
 
@@ -24,11 +25,26 @@ declare module "@mui/material/Button" {
   }
 }
 
+declare module "@mui/material/Chip" {
+  interface ChipPropsColorOverrides {
+    neutral: true;
+  }
+}
+
+declare module "@mui/material/IconButton" {
+  interface IconButtonPropsColorOverrides {
+    cswhite: true;
+  }
+}
+
 const theme = createTheme({
   palette: {
     neutral: {
-      // main: "rgba(0, 35, 31, 0.3)",
       main: "rgba(0, 0, 0, 0.5)",
+      contrastText: "#fff",
+    },
+    cswhite: {
+      main: "rgba(255, 255, 255, 0.8)",
       contrastText: "#fff",
     },
   },

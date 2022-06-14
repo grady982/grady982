@@ -14,8 +14,9 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import grady2 from "../../assets/images/grady2.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-const pages = ["About Me", "Blog"];
+// const pages = ["About Me", "Blog"];
 const settings = ["yo What's up"];
 
 const ResponsiveAppBar = () => {
@@ -45,7 +46,6 @@ const ResponsiveAppBar = () => {
     <AppBar position="static" color="neutral">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
@@ -93,11 +93,11 @@ const ResponsiveAppBar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
+              {/* {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
-              ))}
+              ))} */}
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
@@ -120,7 +120,7 @@ const ResponsiveAppBar = () => {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+            {/* {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
@@ -128,10 +128,27 @@ const ResponsiveAppBar = () => {
               >
                 {page}
               </Button>
-            ))}
-            <MenuItem key="Github">
-              <IconButton size="medium" color="inherit">
+            ))} */}
+            <MenuItem key="Github" sx={{ p: "6px 10px" }}>
+              <IconButton
+                size="small"
+                color="inherit"
+                onClick={() => {
+                  window.open("https://github.com/grady982");
+                }}
+              >
                 <GitHubIcon />
+              </IconButton>
+            </MenuItem>
+            <MenuItem key="LinkedIn" sx={{ p: "6px 10px" }}>
+              <IconButton
+                size="small"
+                color="inherit"
+                onClick={() => {
+                  window.open("www.linkedin.com/in/liu-grady-1aa6621b6");
+                }}
+              >
+                <LinkedInIcon />
               </IconButton>
             </MenuItem>
           </Box>
@@ -168,9 +185,6 @@ const ResponsiveAppBar = () => {
         </Toolbar>
       </Container>
     </AppBar>
-    // <ThemeProvider theme={theme}>
-
-    // </ThemeProvider>
   );
 };
 export default ResponsiveAppBar;
