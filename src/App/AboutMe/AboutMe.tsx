@@ -7,6 +7,7 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
+import "./AboutMe.css";
 
 function Title(props: any) {
   const { text, mt } = props;
@@ -71,16 +72,7 @@ function AboutMe(props: any) {
 
   return (
     <Grow in={isShow} style={{ transformOrigin: "80 0 0" }}>
-      <section
-        style={{
-          height: "75%",
-          width: "70%",
-          background: "rgba(0, 0, 0, 0.3)",
-          padding: "20px 60px",
-          borderRadius: "7px",
-          overflowY: "auto",
-        }}
-      >
+      <section className="AboutMe">
         <Stack direction="row" justifyContent="flex-end" alignItems="center">
           <IconButton color="cswhite" onClick={onCloseBtnClick}>
             <CloseIcon />
