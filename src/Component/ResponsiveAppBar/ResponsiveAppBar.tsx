@@ -8,15 +8,12 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import grady2 from "../../assets/images/grady2.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-// const pages = ["About Me", "Blog"];
 const settings = ["yo What's up"];
 
 const ResponsiveAppBar = () => {
@@ -50,7 +47,6 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -93,14 +89,30 @@ const ResponsiveAppBar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {/* {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))} */}
+              <MenuItem key="Github" sx={{ p: "6px 10px" }}>
+                <IconButton
+                  size="small"
+                  color="inherit"
+                  onClick={() => {
+                    window.open("https://github.com/grady982");
+                  }}
+                >
+                  <GitHubIcon />
+                </IconButton>
+              </MenuItem>
+              <MenuItem key="LinkedIn" sx={{ p: "6px 10px" }}>
+                <IconButton
+                  size="small"
+                  color="inherit"
+                  onClick={() => {
+                    window.open("www.linkedin.com/in/liu-grady-1aa6621b6");
+                  }}
+                >
+                  <LinkedInIcon />
+                </IconButton>
+              </MenuItem>
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -117,18 +129,9 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            LOGO
+            Grady Liu
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {/* {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))} */}
             <MenuItem key="Github" sx={{ p: "6px 10px" }}>
               <IconButton
                 size="small"

@@ -76,8 +76,9 @@ function AboutMe(props: any) {
           height: "75%",
           width: "70%",
           background: "rgba(0, 0, 0, 0.3)",
-          padding: "20px 60px",
+          padding: "10px",
           borderRadius: "7px",
+          overflowY: "auto",
         }}
       >
         <Stack direction="row" justifyContent="flex-end" alignItems="center">
@@ -86,7 +87,7 @@ function AboutMe(props: any) {
           </IconButton>
         </Stack>
 
-        <div style={{ padding: "10px" }}>
+        <div style={{ padding: "30px 60px" }}>
           <Title text="About Me" />
           <Content mt={3}>
             I am Grady Liu, a Software Developer. I have 3 years of front-end
