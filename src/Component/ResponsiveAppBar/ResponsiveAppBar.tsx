@@ -105,7 +105,9 @@ const ResponsiveAppBar = () => {
                   size="small"
                   color="inherit"
                   onClick={() => {
-                    window.open("www.linkedin.com/in/liu-grady-1aa6621b6");
+                    window.open(
+                      "https://www.linkedin.com/in/liu-grady-1aa6621b6"
+                    );
                   }}
                 >
                   <LinkedInIcon />

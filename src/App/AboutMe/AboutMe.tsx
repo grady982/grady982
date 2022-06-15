@@ -70,13 +70,13 @@ function AboutMe(props: any) {
   };
 
   return (
-    <Grow in={isShow} style={{ transformOrigin: "0 0 0" }}>
+    <Grow in={isShow} style={{ transformOrigin: "80 0 0" }}>
       <section
         style={{
           height: "75%",
           width: "70%",
           background: "rgba(0, 0, 0, 0.3)",
-          padding: "10px",
+          padding: "20px 60px",
           borderRadius: "7px",
           overflowY: "auto",
         }}
@@ -87,7 +87,7 @@ function AboutMe(props: any) {
           </IconButton>
         </Stack>
 
-        <div style={{ padding: "30px 60px" }}>
+        <div style={{ padding: "0px 30px" }}>
           <Title text="About Me" />
           <Content mt={3}>
             I am Grady Liu, a Software Developer. I have 3 years of front-end

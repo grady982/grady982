@@ -29,8 +29,8 @@ jobs:
           node-version: "14.x"
 
       - name: install dependencies
-        run: npm install
-        run: npm i react-scripts
+      - run: npm install
+      - run: npm i react-scripts
       # Runs a single command using the runners shell
       - name: react build
         run: react-scripts build
