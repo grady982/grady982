@@ -13,18 +13,10 @@ function Title(props: any) {
   const { text, mt } = props;
   return (
     <Typography
-      variant="h5"
-      component="h5"
-      sx={{
-        mt: mt,
-        mr: 2,
-        display: { xs: "none", md: "flex" },
-        fontFamily: "monospace",
-        fontWeight: 700,
-        letterSpacing: ".2rem",
-        color: "white",
-        textDecoration: "none",
-      }}
+      className="title"
+      variant="h1"
+      component="h1"
+      sx={{ mt: mt, mr: 2 }}
     >
       {text}
     </Typography>
@@ -34,19 +26,10 @@ function Title(props: any) {
 function Content(props: any) {
   return (
     <Typography
+      className="content"
       variant="body1"
       component="p"
-      sx={{
-        mt: props.mt,
-        mr: 2,
-        display: { xs: "none", md: "flex" },
-        fontSize: "1.2rem",
-        fontFamily: "monospace",
-        fontWeight: 700,
-        letterSpacing: ".1rem",
-        color: "white",
-        textDecoration: "none",
-      }}
+      sx={{ mt: props.mt, mr: 2 }}
     >
       {props.children}
     </Typography>
@@ -72,14 +55,14 @@ function AboutMe(props: any) {
 
   return (
     <Grow in={isShow} style={{ transformOrigin: "80 0 0" }}>
-      <section className="AboutMe">
+      <section className="about-me">
         <Stack direction="row" justifyContent="flex-end" alignItems="center">
           <IconButton color="cswhite" onClick={onCloseBtnClick}>
             <CloseIcon />
           </IconButton>
         </Stack>
 
-        <div style={{ padding: "0px 30px" }}>
+        <div className="about-me-block">
           <Title text="About Me" />
           <Content mt={3}>
             I am Grady Liu, a Software Developer. I have 3 years of front-end
@@ -111,7 +94,9 @@ function AboutMe(props: any) {
                   <h5 style={{ margin: "0" }}>{data.title}:</h5>
                   <Stack direction="row" spacing={2}>
                     {data.skills.map((skill) => {
-                      return <Chip label={skill} color="neutral" />;
+                      return (
+                        <Chip label={skill} color="neutral" size="small" />
+                      );
                     })}
                   </Stack>
                 </Grid>
