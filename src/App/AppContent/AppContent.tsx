@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import InsertEmoticonIcon from "@mui/icons-material/InsertEmoticon";
 import AboutMe from "../AboutMe/AboutMe";
+import "./AppContent.css";
 
 function AppContent() {
   const [flag, setFlag] = useState("hello");
@@ -39,11 +40,11 @@ function AppContent() {
 
   return (
     <Grid
+      className="app-content-height"
       container
       direction="row"
       justifyContent="center"
       alignItems="center"
-      style={{ height: "900px" }}
     >
       <Content flag={flag} />
     </Grid>
