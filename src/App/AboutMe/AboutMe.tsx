@@ -107,15 +107,6 @@ function AboutMe(props: any) {
                     {data.skills.map((skill) => {
                       return (
                         <Chip label={skill} color="neutral" size="small" />
-                        // <Chip
-                        //   label={skill}
-                        //   className={
-                        //     theme === ThemeMode.Dark
-                        //       ? "about-me about-me-dark"
-                        //       : "about-me about-me-light"
-                        //   }
-                        //   size="small"
-                        // />
                       );
                     })}
                   </Stack>

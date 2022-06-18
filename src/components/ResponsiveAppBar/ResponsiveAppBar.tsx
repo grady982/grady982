@@ -119,6 +119,15 @@ const ResponsiveAppBar = (props: any) => {
                   <LinkedInIcon />
                 </IconButton>
               </MenuItem>
+              <MenuItem key="Theme" sx={{ p: "6px 10px" }}>
+                <IconButton color="inherit" onClick={onThemeBtnClick}>
+                  {theme === ThemeMode.Dark ? (
+                    <DarkModeOutlinedIcon />
+                  ) : (
+                    <LightModeOutlinedIcon />
+                  )}
+                </IconButton>
+              </MenuItem>
             </Menu>
           </Box>
           <Typography
