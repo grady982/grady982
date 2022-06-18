@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -13,16 +13,17 @@ import MenuItem from "@mui/material/MenuItem";
 import grady2 from "../../assets/images/grady2.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import { ThemeMode } from "../../common/enum";
 
 const settings = ["yo What's up"];
 
-const ResponsiveAppBar = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
-    null
-  );
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
-    null
-  );
+const ResponsiveAppBar = (props: any) => {
+  const { theme, changeTheme } = props;
+  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
+  const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
+  // const [currentTheme, setCurrentTeme] = useState(ThemeMode.Dark);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -37,6 +38,10 @@ const ResponsiveAppBar = () => {
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
+  };
+
+  const onThemeBtnClick = () => {
+    changeTheme(theme === ThemeMode.Dark ? ThemeMode.Light : ThemeMode.Dark);
   };
 
   return (
@@ -60,6 +65,7 @@ const ResponsiveAppBar = () => {
             Grady Liu
           </Typography>
 
+          {/* hamburger */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -156,8 +162,16 @@ const ResponsiveAppBar = () => {
                 <LinkedInIcon />
               </IconButton>
             </MenuItem>
+            <MenuItem key="Theme" sx={{ p: "6px 10px" }}>
+              <IconButton color="inherit" onClick={onThemeBtnClick}>
+                {theme === ThemeMode.Dark ? (
+                  <DarkModeOutlinedIcon />
+                ) : (
+                  <LightModeOutlinedIcon />
+                )}
+              </IconButton>
+            </MenuItem>
           </Box>
-
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

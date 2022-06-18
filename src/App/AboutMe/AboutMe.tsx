@@ -7,6 +7,7 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
+import { ThemeMode } from "../../common/enum";
 import "./AboutMe.css";
 
 function Title(props: any) {
@@ -37,6 +38,10 @@ function Content(props: any) {
 }
 
 function AboutMe(props: any) {
+  const { theme } = props;
+
+  console.log(`fucking theme: ${props.theme}`);
+
   const techStack = [
     { title: "Front-End", skills: ["Angular", "React"] },
     { title: "Back-End", skills: ["NodeJs", "Express", "Koa"] },
@@ -55,7 +60,13 @@ function AboutMe(props: any) {
 
   return (
     <Grow in={isShow} style={{ transformOrigin: "80 0 0" }}>
-      <section className="about-me">
+      <section
+        className={
+          theme === ThemeMode.Dark
+            ? "about-me about-me-dark"
+            : "about-me about-me-light"
+        }
+      >
         <Stack direction="row" justifyContent="flex-end" alignItems="center">
           <IconButton color="cswhite" onClick={onCloseBtnClick}>
             <CloseIcon />
@@ -80,7 +91,7 @@ function AboutMe(props: any) {
               href="https://www.udemy.com/certificate/UC-5be14435-4e74-468c-820a-77905dffac2a/?utm_source=sendgrid.com&utm_medium=email&utm_campaign=email"
               underline="hover"
               sx={{
-                color: "white",
+                color: theme === ThemeMode.Dark ? "white" : "black",
               }}
             >
               Docker Mastery: with Kubernetes +Swarm from a Docker Captain
@@ -96,6 +107,15 @@ function AboutMe(props: any) {
                     {data.skills.map((skill) => {
                       return (
                         <Chip label={skill} color="neutral" size="small" />
+                        // <Chip
+                        //   label={skill}
+                        //   className={
+                        //     theme === ThemeMode.Dark
+                        //       ? "about-me about-me-dark"
+                        //       : "about-me about-me-light"
+                        //   }
+                        //   size="small"
+                        // />
                       );
                     })}
                   </Stack>
