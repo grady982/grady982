@@ -11,7 +11,7 @@
 }
 
 .hello-shaking {
-  animation: shaking 0.3s infinite;
+  animation: shaking 0.15s infinite;
   /* animation-iteration-count: 10; */
 }
 
@@ -20,13 +20,13 @@
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(2deg);
+    transform: rotate(1deg);
   }
   50% {
     transform: rotate(0eg);
   }
   75% {
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
   }
   100% {
     transform: rotate(0deg);

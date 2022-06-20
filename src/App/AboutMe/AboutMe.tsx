@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Typography from "@mui/material/Typography";
 import Grow from "@mui/material/Grow";
 import Link from "@mui/material/Link";
@@ -7,6 +7,7 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
+import { ThemeContext } from "../../context/ThemeContextProvider";
 import { ThemeMode } from "../../common/enum";
 import "./AboutMe.css";
 
@@ -38,9 +39,7 @@ function Content(props: any) {
 }
 
 function AboutMe(props: any) {
-  const { theme } = props;
-
-  console.log(`fucking theme: ${props.theme}`);
+  const { theme } = useContext(ThemeContext);
 
   const techStack = [
     { title: "Front-End", skills: ["Angular", "React"] },

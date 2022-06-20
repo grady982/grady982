@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -16,14 +16,14 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import { ThemeMode } from "../../common/enum";
+import { ThemeContext } from "../../context/ThemeContextProvider";
 
 const settings = ["yo What's up"];
 
-const ResponsiveAppBar = (props: any) => {
-  const { theme, changeTheme } = props;
+const ResponsiveAppBar = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
-  // const [currentTheme, setCurrentTeme] = useState(ThemeMode.Dark);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -41,7 +41,7 @@ const ResponsiveAppBar = (props: any) => {
   };
 
   const onThemeBtnClick = () => {
-    changeTheme(theme === ThemeMode.Dark ? ThemeMode.Light : ThemeMode.Dark);
+    toggleTheme();
   };
 
   return (

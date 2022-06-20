@@ -34,7 +34,7 @@ function AppContent(props: any) {
           setIsPlay(AnimationPlayState.Paused);
         }, 3000);
       }
-    }, [isPlay]);
+    }, [AnimationPlayState.Paused, AnimationPlayState.Running, isPlay]);
 
     return (
       <Button
@@ -53,21 +53,9 @@ function AppContent(props: any) {
   const Content = (props: any) => {
     switch (props.flag) {
       case "hello":
-        return (
-          <HelloButton />
-          // <Button
-          //   className="hello-shaking"
-          //   style={{ animationPlayState: isPlay }}
-          //   variant="contained"
-          //   startIcon={<InsertEmoticonIcon />}
-          //   color="neutral"
-          //   onClick={helloBtnClick}
-          // >
-          //   Hello
-          // </Button>
-        );
+        return <HelloButton />;
       case "about me":
-        return <AboutMe theme={props.theme} onClose={setHelloFlag} />;
+        return <AboutMe onClose={setHelloFlag} />;
       case "Blog":
         return <div>Blog</div>;
       default:
