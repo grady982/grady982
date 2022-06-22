@@ -37,7 +37,7 @@ declare module "@mui/material/IconButton" {
   }
 }
 
-const theme = createTheme({
+const darkTheme = createTheme({
   palette: {
     neutral: {
       main: "rgba(0, 0, 0, 0.5)",
@@ -50,4 +50,17 @@ const theme = createTheme({
   },
 });
 
-export { theme };
+const lightTheme = createTheme({
+  palette: {
+    neutral: {
+      main: "rgba(255, 255, 255, 0.5)",
+      contrastText: "#000000",
+    },
+    cswhite: {
+      main: "rgba(0, 0, 0, 0.8)",
+      contrastText: "#fff",
+    },
+  },
+});
+
+export { darkTheme, lightTheme };

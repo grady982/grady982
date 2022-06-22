@@ -10,11 +10,25 @@
   min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
+.hello-shaking {
+  animation: shaking 0.15s infinite;
+  /* animation-iteration-count: 10; */
+}
+
+@keyframes shaking {
+  0% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }

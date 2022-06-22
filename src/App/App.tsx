@@ -1,20 +1,22 @@
 import React from "react";
 import "./App.css";
-import ResponsiveAppBar from "../Component/ResponsiveAppBar/ResponsiveAppBar";
+import ResponsiveAppBar from "../components/ResponsiveAppBar/ResponsiveAppBar";
 import AppContent from "./AppContent/AppContent";
-import { ThemeProvider } from "@mui/material/styles";
-import { theme } from "../theme/customTheme";
+import NoSsr from "@mui/material/NoSsr";
+import { ThemeContextProvider } from "../context/ThemeContextProvider";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <div className="App App-bg">
-        <header>
-          <ResponsiveAppBar />
-        </header>
-        <AppContent />
-      </div>
-    </ThemeProvider>
+    <ThemeContextProvider>
+      <NoSsr defer={true}>
+        <div className="App App-bg">
+          <header>
+            <ResponsiveAppBar />
+          </header>
+          <AppContent />
+        </div>
+      </NoSsr>
+    </ThemeContextProvider>
   );
 }
 
