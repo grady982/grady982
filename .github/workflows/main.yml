@@ -13,27 +13,14 @@ jobs:
       USER_EMAIL: grady_liu@gmail.com
       PUBLISH_DIR: ./build
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10.x]
-
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2 # get code
+      - uses: actions/setup-node@v2 # setup node
         with:
-          node-version: ${{ matrix.node-version }}
-      - name: npm install
-        run: |
-          npm install
-      - name: npm run build
-        run: |
-          npm run gulp m
-          npm run build
-      - name: Commit files
-        run: |
-          cd $PUBLISH_DIR
+          node-version: 12
+      - run: npm ci
+      - run: npm run build
+      - run: cd $PUBLISH_DIR
           git init
           git config --local user.name $USER_NAME
           git config --local user.email $USER_EMAIL
