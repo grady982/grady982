@@ -37,6 +37,12 @@ declare module "@mui/material/IconButton" {
   }
 }
 
+declare module "@mui/material/AppBar" {
+  interface AppBarPropsColorOverrides {
+    neutral: true;
+  }
+}
+
 const darkTheme = createTheme({
   palette: {
     neutral: {
