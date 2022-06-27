@@ -19,10 +19,10 @@ jobs:
       - uses: actions/setup-node@v2 # setup node
         with:
           node-version: 12
-      - run: | 
+      run: | 
         npm ci
         npm run build
-      - run: |
+      run: |
           cd $PUBLISH_DIR
           git init
           git config --local user.name $USER_NAME
