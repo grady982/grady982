@@ -14,13 +14,17 @@ One of my favorite sayings is **"What you learn easily, you forget easily too.If
 
 ## Tech Stack
 
-**Front-End:** `Angular`, `React`
+**Front-End:** `Angular`, `React`, `JavaScript`, `TypeScript`
 
-**Back-End:** `NodeJS`, `Express`, `Koa`
+**Back-End:** `NodeJS`, `Express`, `Koa`, `ORM`, `Golang(beginner)`
 
-**Database:** `Postgresql`, `MsSQL`, `Mongo`
+**Source Control:** `Git`
 
-**DevOps:** `Docker`, `Kubernetes`
+**Database:** `Postgresql`, `MsSQL`, `Mongo`, `Redis`
+
+**DevOps:** `Docker`, `Kubernetes`, `CICD(beginner)`
+
+**Cloud:** `Azure(beginner)`
 
 <!---
 grady982/grady982 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
