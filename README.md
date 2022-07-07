@@ -22,9 +22,9 @@ One of my favorite sayings is **"What you learn easily, you forget easily too.If
 
 **Database:** `Postgresql`, `MsSQL`, `Mongo`, `Redis`
 
-**DevOps:** `Docker`, `Kubernetes`, `CICD(beginner)`
+**DevOps:** `Docker`, `Kubernetes`, `CICD`
 
-**Cloud:** `Azure(beginner)`
+**Cloud:** `Azure`
 
 <!---
 grady982/grady982 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
