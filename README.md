@@ -10,8 +10,8 @@ One of my favorite sayings is **"What you learn easily, you forget easily too.If
 
 ## Certification
 
-[Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/certificate/UC-5be14435-4e74-468c-820a-77905dffac2a/?utm_source=sendgrid.com&utm_medium=email&utm_campaign=email)</br>
-[AZ-900: Microsoft Azure Fundamentals Exam Prep - MAY 2022](https://www.udemy.com/certificate/UC-2ffed042-6f86-461c-a8e0-1d17865d6a14/)
+- [Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/certificate/UC-5be14435-4e74-468c-820a-77905dffac2a/?utm_source=sendgrid.com&utm_medium=email&utm_campaign=email)
+- [AZ-900: Microsoft Azure Fundamentals Exam Prep - MAY 2022](https://www.udemy.com/certificate/UC-2ffed042-6f86-461c-a8e0-1d17865d6a14/)
 
 ## Tech Stack
 
