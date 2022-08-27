@@ -2,9 +2,10 @@
 
 ## 🎯 About me
 
-I am Grady Liu, a Software Developer. </br>
-I have 3 years of front-end and 2 years of back-end development experience.
-I love to learn some trendy technical stuff from Udemy or Youtube.
+I am Grady Liu, a full-stack Developer. </br>
+Having 3 years of front-end and 2 years of back-end development experience as well.
+I am happy to find out some technical stuff that I don't know.
+That makes me more humble and active in learning.
 I enjoy the process while I struggle with the new challenge.</br>
 One of my favorite sayings is **"What you learn easily, you forget easily too.If you watch and struggle on your own you will master the technique better."**
 
