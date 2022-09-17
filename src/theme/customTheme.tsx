@@ -1,52 +1,9 @@
 import { createTheme } from "@mui/material/styles";
 
-declare module "@mui/material/styles" {
-  interface Palette {
-    neutral: Palette["primary"];
-  }
-
-  // allow configuration using `createTheme`
-  interface PaletteOptions {
-    neutral?: PaletteOptions["primary"];
-    cswhite?: PaletteOptions["primary"];
-  }
-}
-
-// Update the Button's color prop options
-declare module "@mui/material/AppBar" {
-  interface ButtonPropsColorOverrides {
-    neutral: true;
-  }
-}
-
-declare module "@mui/material/Button" {
-  interface ButtonPropsColorOverrides {
-    neutral: true;
-  }
-}
-
-declare module "@mui/material/Chip" {
-  interface ChipPropsColorOverrides {
-    neutral: true;
-  }
-}
-
-declare module "@mui/material/IconButton" {
-  interface IconButtonPropsColorOverrides {
-    cswhite: true;
-  }
-}
-
-declare module "@mui/material/AppBar" {
-  interface AppBarPropsColorOverrides {
-    neutral: true;
-  }
-}
-
 const darkTheme = createTheme({
   palette: {
     neutral: {
-      main: "rgba(0, 0, 0, 0.5)",
+      main: "rgba(0, 0, 0, 0.7)",
       contrastText: "#fff",
     },
     cswhite: {
@@ -68,5 +25,41 @@ const lightTheme = createTheme({
     },
   },
 });
+declare module "@mui/material/styles" {
+  interface Palette {
+    neutral: Palette["primary"];
+  }
+
+  // allow configuration using `createTheme`
+  interface PaletteOptions {
+    neutral: PaletteOptions["primary"];
+    cswhite?: PaletteOptions["primary"];
+  }
+}
+
+// Update the Button's color prop options
+declare module "@mui/material/AppBar" {
+  interface AppBarPropsColorOverrides {
+    neutral: true;
+  }
+}
+
+declare module "@mui/material/Button" {
+  interface ButtonPropsColorOverrides {
+    neutral: true;
+  }
+}
+
+declare module "@mui/material/Chip" {
+  interface ChipPropsColorOverrides {
+    neutral: true;
+  }
+}
+
+declare module "@mui/material/IconButton" {
+  interface IconButtonPropsColorOverrides {
+    cswhite: true;
+  }
+}
 
 export { darkTheme, lightTheme };
