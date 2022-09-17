@@ -6,7 +6,7 @@ import AboutMe from "../AboutMe/AboutMe";
 import "./AppContent.css";
 
 function AppContent(props: any) {
-  const [flag, setFlag] = useState("hello");
+  const [flag, setFlag] = useState("about me");
 
   const helloBtnClick = () => {
     setFlag("about me");
@@ -41,11 +41,11 @@ function AppContent(props: any) {
         className="hello-shaking"
         style={{ animationPlayState: isPlay }}
         variant="contained"
-        startIcon={<InsertEmoticonIcon />}
+        // startIcon={<InsertEmoticonIcon />}
         color="neutral"
         onClick={helloBtnClick}
       >
-        Hello
+        About Me
       </Button>
     );
   };

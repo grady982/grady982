@@ -40,6 +40,14 @@ function Content(props: any) {
 
 function AboutMe(props: any) {
   const { theme } = useContext(ThemeContext);
+  const [isShow, setIsShow] = useState(true);
+
+  const content = `I am Grady Liu, a Software Developer. I have 3 years of front-end
+  and 2 years of back-end development experience. I love to learn some
+  trendy technical stuff from Udemy or Youtube. I enjoy the process
+  while I struggle with the new challenge. One of my favorite sayings
+  is "What you learn easily, you forget easily too.If you watch and
+  struggle on your own you will master the technique better."`;
 
   const techStack = [
     { title: "Front-End", skills: ["Angular", "React"] },
@@ -47,8 +55,6 @@ function AboutMe(props: any) {
     { title: "Database", skills: ["PostgreSQL", "MSSQL", "Mongo"] },
     { title: "DevOps", skills: ["Docker", "Kubernetes"] },
   ];
-
-  const [isShow, setIsShow] = useState(true);
 
   const onCloseBtnClick = () => {
     setIsShow(false);
@@ -74,16 +80,11 @@ function AboutMe(props: any) {
 
         <div className="about-me-block">
           <Title text="About Me" />
-          <Content mt={3}>
-            I am Grady Liu, a Software Developer. I have 3 years of front-end
-            and 2 years of back-end development experience. I love to learn some
-            trendy technical stuff from Udemy or Youtube. I enjoy the process
-            while I struggle with the new challenge. One of my favorite sayings
-            is "What you learn easily, you forget easily too.If you watch and
-            struggle on your own you will master the technique better."
-          </Content>
+          <hr />
+          <Content mt={3}>{content}</Content>
           <Title mt={5} text="Certification" />
-          <Content mt={3}>
+          <hr />
+          <Content mt={2}>
             <Link
               target="_blank"
               rel="noopener"
@@ -97,15 +98,17 @@ function AboutMe(props: any) {
             </Link>
           </Content>
           <Title mt={5} text="Tech Stack" />
+          <hr />
           {techStack.map((data) => {
             return (
-              <Content mt={2}>
+              <Content mt={1}>
                 <Grid container direction="row" alignItems="center">
-                  <h5 style={{ margin: "0" }}>{data.title}:</h5>
+                  <h4 style={{ margin: "0 15px 0 0" }}>{data.title}:</h4>
                   <Stack direction="row" spacing={2}>
                     {data.skills.map((skill) => {
                       return (
-                        <Chip label={skill} color="neutral" size="small" />
+                        // <Chip label={skill} color="neutral" size="small" />
+                        <span>{skill};</span>
                       );
                     })}
                   </Stack>
