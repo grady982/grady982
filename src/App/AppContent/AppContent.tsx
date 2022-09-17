@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
-import InsertEmoticonIcon from "@mui/icons-material/InsertEmoticon";
 import AboutMe from "../AboutMe/AboutMe";
 import "./AppContent.css";
 

@@ -2,7 +2,6 @@ import React, { useState, useContext } from "react";
 import Typography from "@mui/material/Typography";
 import Grow from "@mui/material/Grow";
 import Link from "@mui/material/Link";
-import Chip from "@mui/material/Chip";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import IconButton from "@mui/material/IconButton";
