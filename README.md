@@ -3,7 +3,7 @@
 ## 🎯 About me
 
 I am Grady Liu, a full-stack Developer. </br>
-Having 3 years of front-end and 2 years of back-end development experience as well.
+I have 5+ full stack development experience.
 I am happy to find out some technical stuff that I don't know.
 That makes me more humble and active in learning.
 I enjoy the process while I struggle with the new challenge.</br>
@@ -16,17 +16,19 @@ One of my favorite sayings is **"What you learn easily, you forget easily too.If
 
 ## Tech Stack
 
-**Front-End:** `Angular`, `React`, `JavaScript`, `TypeScript`
+**Front-End:** `Angular`, `React`, `React Native`, `JavaScript`, `TypeScript`
 
-**Back-End:** `NodeJS`, `Express`, `Koa`, `ORM`, `Golang(beginner)`
+**Back-End:** `NodeJS`, `Express`, `Koa`, `ORM`, `.NET Core`, `Java`, `Spring Boot`
 
 **Source Control:** `Git`
 
 **Database:** `Postgresql`, `MsSQL`, `Mongo`, `Redis`
 
-**DevOps:** `Docker`, `Kubernetes`, `CICD`
+**DevOps:** `Docker`, `Kubernetes`, `Jenkins`, `OCP`
 
-**Cloud:** `Azure`
+**Cloud:** `Azure`, `GCP`
+
+**AI Tool:** `Github Copilot`
 
 <!---
 grady982/grady982 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
