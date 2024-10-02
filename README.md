@@ -1,4 +1,4 @@
-# Hi ~ I'm Grady 👋
+## Hi ~ I'm Grady 👋
 
 - 🍡  <a href="http://localhost:4200/pages/posts/list" target="_blank">Blog</a> 
 - 🍜  Frontend Developer
