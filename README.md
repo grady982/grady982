@@ -13,14 +13,14 @@
 ```mermaid
 timeline
     title My Developer Journey
-    2023 : Angular
-         : .NET Core
-         : Java
-    2022 : React
-    2021 : React
-         : NodeJs
     2017 : AngularJs
-         : .NET
+         : .NET Framework
          : Angular
-         : NodeJs
+         : NodeJs( Koa )
+    2021 : React
+         : NodeJs( Express )
+    2022 : React
+    2023 : Angular
+             : .NET Core
+             : Java
 ```
