@@ -7,3 +7,20 @@
 
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=grady982&hide=contribs,prs&show_icons=true&theme=dark)]()
+
+---
+
+```mermaid
+timeline
+    title My Developer Journey
+    2023 : Angular
+         : .NET Core
+         : Java
+    2022 : React
+    2021 : React
+         : NodeJs
+    2017 : AngularJs
+         : .NET
+         : Angular
+         : NodeJs
+```
