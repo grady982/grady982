@@ -20,7 +20,9 @@ timeline
     2021 : React
          : NodeJs( Express )
     2022 : React
-    2023 : Angular
-             : .NET Core
-             : Java
+    2023 : Angular 16
+         : .NET Core
+         : Java
+    2024 : Angular 16
+         : Java
 ```
