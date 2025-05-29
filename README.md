@@ -26,4 +26,6 @@ timeline
          : Java
     2024 : Angular 16
          : Java
+    2025 : Angular 19
+         : Java( Spring Boot )
 ```
