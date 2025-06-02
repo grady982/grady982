@@ -29,3 +29,14 @@ timeline
     2025 : Angular 19
          : Java( Spring Boot )
 ```
+
+---
+
+## TODO Side Projects
+
+- Custom GrapesJs plugin => Email Editor
+- Custom FamilyTreeJs => Data Lineage
+- Custom Draflow => No code canvas
+- Embedded SQL Flow
+- Embedded Tableau Report
+- EDM reader
