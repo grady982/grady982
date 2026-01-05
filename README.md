@@ -1,9 +1,10 @@
-## Hi ~ I'm Grady 👋
+## Hi~ I'm Grady 🧃
 
-* 🍡  <a href="https://grady982.github.io/" target="_blank">Portfolio</a>
-* 🛠️ [Convert 2 Webp](https://convert2webp.app/)
-* 🧠 <a href="https://grady-blog.web.app/pages/posts/list" target="_blank">Blog</a>
-* 🧃  What you learn easily, you forget easily too.If you watch and struggle on your own you will master the technique better
+**One of my favorite sayings is: What you learn easily, you forget easily too. <br />If you watch and struggle on your own, you will master the technique better.**
+
+👨‍🍳 <a href="https://grady982.github.io/" target="_blank">My work porfolio</a> <br />
+🍔 <a href="https://convert2webp.app/" target="_blank">Convert 2 Webp</a> <br />
+🍜 <a href="https://grady-blog.web.app/pages/posts/list" target="_blank">Blog</a> <br />
 
 ---
 
@@ -24,12 +25,6 @@ timeline
          : Java
     2025 : Angular 19
          : Java( Spring Boot )
+    2026 : Angular 20
+         : React 19
 ```
-
----
-
-## TODO Side Projects
-
-- Embedded SQL Flow
-- Embedded Tableau Report
-- EDM reader
