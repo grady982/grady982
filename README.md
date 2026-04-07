@@ -1,6 +1,5 @@
 ## Hi~ I'm Grady 🧃
-
-**One of my favorite sayings is: What you learn easily, you forget easily too. <br />If you watch and struggle on your own, you will master the technique better.**
+> Practice as if you are the worst, Perform as if you are the best.
 
 👨‍🍳 <a href="https://grady982.github.io/" target="_blank">My work porfolio</a> <br />
 🍔 <a href="https://convert2webp.app/" target="_blank">Convert 2 Webp</a> <br />
